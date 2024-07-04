@@ -40,6 +40,6 @@ namespace DotRecast.Detour
 
         public DtOffMeshConnection[] offMeshCons; //< The tile off-mesh connections. [Size: dtMeshHeader::offMeshConCount]
 
-        private DtMeshData() { }
+        public DtMeshData() { }
     }
 }

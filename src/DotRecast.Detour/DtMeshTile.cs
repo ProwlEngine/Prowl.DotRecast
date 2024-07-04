@@ -35,7 +35,7 @@ namespace DotRecast.Detour
         public int flags; //< Tile flags. (See: #dtTileFlags)
         public DtMeshTile next; //< The next free tile, or the next tile in the spatial grid.
 
-        private DtMeshTile() { }
+        public DtMeshTile() { }
 
         public DtMeshTile(int index)
         {

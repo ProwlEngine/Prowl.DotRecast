@@ -34,6 +34,6 @@ namespace DotRecast.Detour
         public byte bmin; //< If a boundary link, defines the minimum sub-edge area.
         public byte bmax; //< If a boundary link, defines the maximum sub-edge area.
 
-        private DtLink() { }
+        public DtLink() { }
     }
 }

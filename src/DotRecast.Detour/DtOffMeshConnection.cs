@@ -46,6 +46,6 @@ namespace DotRecast.Detour
         /// The id of the offmesh connection. (User assigned when the navigation mesh is built.)
         public int userId;
 
-        private DtOffMeshConnection() { }
+        public DtOffMeshConnection() { }
     }
 }

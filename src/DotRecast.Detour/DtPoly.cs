@@ -46,7 +46,7 @@ namespace DotRecast.Detour
         /// @note Use the structure's set and get methods to access this value.
         public int areaAndtype;
 
-        private DtPoly() { }
+        public DtPoly() { }
 
         public DtPoly(int index, int maxVertsPerPoly)
         {
