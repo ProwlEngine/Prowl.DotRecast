@@ -31,22 +31,22 @@ namespace DotRecast.Detour
     /// @ingroup detour
     public class DtNavMesh
     {
-        private DtNavMeshParams m_params; //< Current initialization params. TODO: do not store this info twice.
-        private RcVec3f m_orig; // < Origin of the tile (0,0)
-        private float m_tileWidth; // < Dimensions of each tile.
-        private float m_tileHeight; // < Dimensions of each tile.
-        private int m_maxTiles; // < Max number of tiles.
-        private int m_tileLutSize; //< Tile hash lookup size (must be pot).
-        private int m_tileLutMask; // < Tile hash lookup mask.
+        public DtNavMeshParams m_params; //< Current initialization params. TODO: do not store this info twice.
+        public RcVec3f m_orig; // < Origin of the tile (0,0)
+        public float m_tileWidth; // < Dimensions of each tile.
+        public float m_tileHeight; // < Dimensions of each tile.
+        public int m_maxTiles; // < Max number of tiles.
+        public int m_tileLutSize; //< Tile hash lookup size (must be pot).
+        public int m_tileLutMask; // < Tile hash lookup mask.
 
-        private DtMeshTile[] m_posLookup; //< Tile hash lookup.
-        private DtMeshTile m_nextFree; //< Freelist of tiles.
-        private DtMeshTile[] m_tiles; //< List of tiles.
+        public DtMeshTile[] m_posLookup; //< Tile hash lookup.
+        public DtMeshTile m_nextFree; //< Freelist of tiles.
+        public DtMeshTile[] m_tiles; //< List of tiles.
 
         /** The maximum number of vertices per navigation polygon. */
-        private int m_maxVertPerPoly;
+        public int m_maxVertPerPoly;
 
-        private int m_tileCount;
+        public int m_tileCount;
 
         public DtStatus Init(DtNavMeshParams param, int maxVertsPerPoly)
         {

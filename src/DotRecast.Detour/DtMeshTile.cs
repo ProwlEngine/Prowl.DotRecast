@@ -26,7 +26,7 @@ namespace DotRecast.Detour
     /// @ingroup detour
     public class DtMeshTile
     {
-        public readonly int index; // DtNavMesh.m_tiles array index
+        public int index; // DtNavMesh.m_tiles array index
         public int linksFreeList = DT_NULL_LINK; //< Index to the next free link.
         public int salt; //< Counter describing modifications to the tile.
         public DtMeshData data; // The tile data.

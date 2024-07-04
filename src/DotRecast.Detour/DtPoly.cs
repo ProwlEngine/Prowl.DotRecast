@@ -24,17 +24,17 @@ namespace DotRecast.Detour
     /// @ingroup detour
     public class DtPoly
     {
-        public readonly int index;
+        public int index;
         
         /// Index to first link in linked list. (Or #DT_NULL_LINK if there is no link.)
         public int firstLink;
 
         /// The indices of the polygon's vertices.
         /// The actual vertices are located in dtMeshTile::verts.
-        public readonly int[] verts;
+        public int[] verts;
 
         /// Packed data representing neighbor polygons references and flags for each edge.
-        public readonly int[] neis;
+        public int[] neis;
 
         /// The user defined polygon flags.
         public int flags;
