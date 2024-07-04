@@ -39,5 +39,7 @@ namespace DotRecast.Detour
         public DtBVNode[] bvTree;
 
         public DtOffMeshConnection[] offMeshCons; //< The tile off-mesh connections. [Size: dtMeshHeader::offMeshConCount]
+
+        private DtMeshData() { }
     }
 }

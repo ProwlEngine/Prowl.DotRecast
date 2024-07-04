@@ -28,5 +28,7 @@ namespace DotRecast.Detour
         public int[] bmin = new int[3]; //< Minimum bounds of the node's AABB. [(x, y, z)]
         public int[] bmax = new int[3]; //< Maximum bounds of the node's AABB. [(x, y, z)]
         public int i; //< The node's index. (Negative for escape sequence.)
+
+        private DtBVNode() { }
     }
 }

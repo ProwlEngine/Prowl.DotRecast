@@ -48,6 +48,8 @@ namespace DotRecast.Detour
 
         public int m_tileCount;
 
+        private DtNavMesh() { }
+
         public DtStatus Init(DtNavMeshParams param, int maxVertsPerPoly)
         {
             m_params = param;

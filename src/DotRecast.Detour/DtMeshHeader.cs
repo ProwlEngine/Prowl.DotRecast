@@ -25,6 +25,8 @@ namespace DotRecast.Detour
     /** Provides high level information related to a dtMeshTile object. */
     public class DtMeshHeader
     {
+        private DtMeshHeader() { }
+
         /** Tile magic number. (Used to identify the data format.) */
         public int magic;
 
